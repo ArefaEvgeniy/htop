@@ -56,7 +56,7 @@ class Processes:
             except (psutil.NoSuchProcess, psutil.AccessDenied, psutil.ZombieProcess):
                 continue
 
-        time.sleep(5)
+        time.sleep(3)
 
         for process in list_of_process:
             try:
